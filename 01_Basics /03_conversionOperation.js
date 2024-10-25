@@ -83,4 +83,4 @@ console.log(typeof randValue) // object
 
 const str = String(randValue) // convert
 console.log(typeof str) // string
-console.log(str) // nun
+console.log(str) // nudefined
