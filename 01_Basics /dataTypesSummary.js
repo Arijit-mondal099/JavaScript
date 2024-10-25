@@ -13,10 +13,10 @@ let userEmail // undefined
 
 const id1 = Symbol("112")
 const id2 = Symbol("112")
-console.log(id1 === id2) // false because symnol is unique 
+// console.log(id1 === id2) // false because symnol is unique 
 
 const bigNumber = 1122334455668899879988n
-console.log(bigNumber)
+// console.log(bigNumber)
 
 // Reference Type: (Non primitiv)
 // Array, Objects, Functions
@@ -34,3 +34,29 @@ const func1 = function() { // function object
 const func2 = () => {
     console.log("Hii iam a function")
 }
+
+// ---------------------------------- Stack and Heap Memory ----------------------------------
+
+// Stack use on all primitiv data types (given you a copy).
+// Heap use on all non primitiv (given you a reference).
+
+// Example of call by value:
+let userName = "Babai Mondal"
+let anotherUsername = userName // pass by value (not pass reference)
+userName = "Arijit Mondal" // update user name 
+
+console.log(userName) // Arijit Mondal
+console.log(anotherUsername) // Babai Mondal
+
+// Example of call by reference:
+
+let user = {
+    name : "Ananta Mondal",
+    age : 28,
+}
+
+let anotherUser = user; // pass by reference
+anotherUser.name = "Shampa Mondal"
+
+console.log(user.name) // shampa mondal
+console.log(anotherUser.name) // shampa mondal
