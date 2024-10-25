@@ -78,9 +78,47 @@
 // console.log(typeof str) // string
 // console.log(str) // null
 
-const randValue = undefined
-console.log(typeof randValue) // object
+// const randValue = undefined
+// console.log(typeof randValue) // object
 
-const str = String(randValue) // convert
-console.log(typeof str) // string
-console.log(str) // nudefined
+// const str = String(randValue) // convert
+// console.log(typeof str) // string
+// console.log(str) // nudefined
+
+// Operations:----------------------------------------------------------
+
+// console.log( 5 + 5 ) // add
+// console.log( 5 - 5 ) // sub
+// console.log( 5 * 5 ) // mul
+// console.log( 5 / 5 ) // div
+// console.log( 5 % 5 ) // mod
+// console.log( 5 ** 5 )// pow
+
+const val = 5
+const negVal = -val
+// console.log(negVal)
+
+const str1 = "arijit"
+const str2 = "mondal"
+const str3 = str1 + " " + str2
+// console.log(str3)
+
+// console.log( "1" + 1 ) // 11 -> convert to string (+ concatenation)
+// console.log( 1 + "1" ) // 11 -> convert to string (+ concatenation)
+
+// console.log( "1" - 1 ) // 0 -> convert to number (- arithmetic operator) 
+// console.log( 1 - "1" ) // 0 -> convert to number (- arithmatic operator)
+
+// console.log( "1" + 1 + 1 ) // 111 -> convert to string
+// console.log( 1 + 1 + "1" ) // 1 + 1 (add) = 2 + "1" (string) = 21
+
+// console.log( +"22" ) // number (bad code)
+
+// preefix & postfix
+let counter = 10
+
+console.log(counter++) // 10 -> first use value then incriment value 
+console.log(++counter) // 12 -> first incriment value then use value 
+
+console.log(counter--) // 12 -> first use value then decriment value 
+console.log(--counter) // 10 -> first decriment value then use value 
